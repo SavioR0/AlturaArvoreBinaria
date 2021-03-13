@@ -25,7 +25,7 @@ void DescobrirAlturaDaArvore(Tree **t){
 }
 ```
 ## getMaisBaixo()
-O método *\*getMaisBaixo()* (int) é a função cuja finalidade é identificar o dado com valor localizado na parte mais profunda da árvore de forma recursiva. Recebe como parâmetro a àrvore principal e dois ponteiros.
+O método *\*getMaisBaixo()* (int) é a função cuja finalidade é identificar o dado com valor localizado na parte mais profunda da árvore de forma recursiva. Recebe como parâmetro a árvore principal e dois ponteiros.
 ```C
 int *getMaisBaixo(Tree **t, int *maisbaixo, int *aux){
 	//printf("%d Aux: %d\n", (*t)->reg.key, *aux);
@@ -52,7 +52,7 @@ int *getMaisBaixo(Tree **t, int *maisbaixo, int *aux){
 }
 ```
 ## getAltura()
-O método *getAltura()* (void) é a função que atua semelhante ao método *pesquisa()* onde, dado um valor, ele é capaz de identificar de forma recursiva onde está o dado. A função motidifica a variável global i, indicando portanto, a altura na arvore. 
+O método *getAltura()* (void) é a função que atua semelhante ao método *pesquisa()* onde, dado um valor, ele é capaz de identificar de forma recursiva onde está o dado. A função modifica a variável global i, indicando portanto, a altura na árvore. 
 ```C
 void getAltura(Tree **t, int *aux){
 	if(*aux > (*t)->reg.key){
@@ -72,4 +72,4 @@ void getAltura(Tree **t, int *aux){
 <p align="center">
     <img src="Images/terminal.png" >
 </p>
-A compilação printa ávore e seus dados, imprime o valor de Aux responsável por guardar o dado mais profundo na árvore e por fim o calculo da altura com o método *getAltura()*.
+A compilação printa a árvore e seus dados, imprime o valor de Aux responsável por guardar o dado mais profundo na árvore e por fim o cálculo da altura com o método *getAltura()*.
